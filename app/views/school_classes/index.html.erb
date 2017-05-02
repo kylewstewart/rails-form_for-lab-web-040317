@@ -1,0 +1,8 @@
+<h3>  All School Classes </h3>
+
+<% @school_classes.each do |school_class| %>
+<div> <%= link_to("#{school_class.title}, #{school_class.room_number}", school_class_path(school_class)) %> </div>
+<% end %>
+<br>
+<br>
+<div> <%= link_to("Create a School Class", new_school_class_path) %> </div>
